@@ -58,21 +58,6 @@ class GildedRose
     item.quality = 0 if item.quality.negative?
   end
 
-  def increment_quality(item)
-    item.quality += 1
-    max_quality_limit(item)
-  end
-
-  def increment_double_quality(item)
-    item.quality += 2
-    max_quality_limit(item)
-  end
-
-  def decrement_quality(item)
-    item.quality -= 1
-    min_quality_limit(item)
-  end
-
   def decrement_double_quality(item)
     item.quality -= 2
     min_quality_limit(item)

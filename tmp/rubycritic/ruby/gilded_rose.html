@@ -47,7 +47,7 @@
     <div class="file-time">
       <span class="committed-at">
         
-          Updated <time class='js-timeago' datetime='2022-03-02 18:00:07 -0600'>2022-03-02 18:00:07 -0600</time>
+          Updated <time class='js-timeago' datetime='2022-03-03 17:22:49 -0600'>2022-03-03 17:22:49 -0600</time>
         
       </span>
     </div>
@@ -68,15 +68,15 @@
           </div>
           <div class="code-statistics col-md-11">
             <div class="col-md-3">
-              <div><span class="metric">95</span><small> lines of codes</small></div>
-              <div><span class="metric">15</span><small> methods</small></div>
+              <div><span class="metric">80</span><small> lines of codes</small></div>
+              <div><span class="metric">12</span><small> methods</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">4.0</span><small> complexity/method</small></div>
-              <div><span class="metric">2</span><small> churn</small></div>
+              <div><span class="metric">4.7</span><small> complexity/method</small></div>
+              <div><span class="metric">3</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">60.6</span><small> complexity</small></div>
+              <div><span class="metric">56.48</span><small> complexity</small></div>
               <div><span class="metric">0</span><small> duplications</small></div>
             </div>
           </div>
@@ -155,21 +155,6 @@ class GildedRose
 
   def min_quality_limit(item)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Utility-Function.md" target="_blank"><b>UtilityFunction</b></a>        </span>      </div>      <span>GildedRose#min_quality_limit doesn't depend on instance state (maybe move it to another class?)</span>          </div>  </li></ol>
     item.quality = 0 if item.quality.negative?
-  end
-
-  def increment_quality(item)
-    item.quality += 1
-    max_quality_limit(item)
-  end
-
-  def increment_double_quality(item)
-    item.quality += 2
-    max_quality_limit(item)
-  end
-
-  def decrement_quality(item)
-    item.quality -= 1
-    min_quality_limit(item)
   end
 
   def decrement_double_quality(item)
