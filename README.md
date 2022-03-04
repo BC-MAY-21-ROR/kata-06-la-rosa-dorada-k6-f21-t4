@@ -3,6 +3,12 @@
 # Kata Gilded Rose Refactoring
 ![cover](img/cover.jpg)
 
+# Score Rubycritic
+### Code
+![](badges/bagde_code.svg)
+
+## Test
+![](badges/badge_test.svg)
 ## Pre-requisitos
 Para evaluar tu código e identificar posibles mejoras debes instalar y utilizar las siguientes herramientas:
 
